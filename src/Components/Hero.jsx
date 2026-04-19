@@ -28,13 +28,11 @@ export default function Hero(){
           <div className="flex flex-col sm:flex-row gap-6 sm:items-start items-center">
             
             <div className="flex flex-col items-center sm:items-start w-full sm:w-auto">
-              <Link to="/schedule-booking" className="relative group bg-yellow-400 text-center text-slate-900 px-8 py-4 rounded-xl font-black text-lg shadow-[0_0_30px_rgba(250,204,21,0.3)] hover:bg-yellow-300 hover:-translate-y-1 hover:shadow-[0_0_50px_rgba(250,204,21,0.6)] active:scale-95 transition-all duration-300 w-full sm:w-max">
-                {/* Subtle pulsing ring out out from behind the button */}
+              <Link to="/contact" className="relative group bg-yellow-400 text-center text-slate-900 px-8 py-4 rounded-xl font-black text-lg shadow-[0_0_30px_rgba(250,204,21,0.3)] hover:bg-yellow-300 hover:-translate-y-1 hover:shadow-[0_0_50px_rgba(250,204,21,0.6)] active:scale-95 transition-all duration-300 w-full sm:w-max">
                 <div className="absolute inset-0 rounded-xl ring-2 ring-yellow-400 animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite] opacity-20 group-hover:opacity-0 transition-opacity"></div>
                 Book a Consultation
               </Link>
               
-              {/* Supporting Micro-copy */}
               <div className="flex items-center gap-2 my-4 text-slate-300 text-[10px] sm:text-xs font-bold uppercase tracking-widest opacity-90 drop-shadow-md">
                 <span className="block w-2 h-2 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.8)] animate-pulse"></span>
                 Strictly Confidential 

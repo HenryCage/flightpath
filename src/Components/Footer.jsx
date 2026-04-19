@@ -45,7 +45,7 @@ export default function Footer() {
             <Link to="/services" className="text-slate-400 hover:text-white transition-colors max-w-max">Services</Link>
             <a className="text-slate-400 hover:text-white transition-colors max-w-max cursor-pointer">About Us</a>
             <a className="text-slate-400 hover:text-white transition-colors max-w-max cursor-pointer">Case Studies</a>
-            <Link to="/contact" className="text-slate-400 hover:tracking-wide hover:text-yellow-400 transition-all font-bold max-w-max mt-2">Schedule Consultation →</Link>
+            <Link to="/schedule-booking" className="text-slate-400 hover:tracking-wide hover:text-yellow-400 transition-all font-bold max-w-max mt-2">Schedule Consultation →</Link>
           </div>
 
         </div>

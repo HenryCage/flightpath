@@ -51,33 +51,6 @@ export default function Booking() {
           </div>
         </div>
 
-        {/* Minimized Secondary Contact Info */}
-        {/* <div className="max-w-[900px] mx-auto mt-20 md:mt-28">
-          <div className="text-center mb-10">
-            <span className="text-slate-400 uppercase tracking-widest font-bold text-xs">Or reach us directly</span>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-4 text-center">
-            
-            <div className="flex flex-col items-center">
-              <span className="material-symbols-outlined text-3xl text-slate-300 mb-3 block">mail</span>
-              <h4 className="font-bold text-slate-900 mb-1">Email</h4>
-              <a href="mailto:contact@flightpath.com" className="text-slate-500 hover:text-slate-900 font-medium transition-colors">contact@flightpath.com</a>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <span className="material-symbols-outlined text-3xl text-slate-300 mb-3 block">call</span>
-              <h4 className="font-bold text-slate-900 mb-1">Phone</h4>
-              <a href="tel:+2348000000000" className="text-slate-500 hover:text-slate-900 font-medium transition-colors">+234 800 000 0000</a>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <span className="material-symbols-outlined text-3xl text-slate-300 mb-3 block">location_on</span>
-              <h4 className="font-bold text-slate-900 mb-1">Office</h4>
-              <p className="text-slate-500 font-medium">123 Aviation Drive, Lagos</p>
-            </div>
-
-          </div>
-        </div> */}
       </section>
     </div>
   )
