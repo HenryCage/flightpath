@@ -4,8 +4,8 @@ import Footer from '../Components/Footer'
 
 export default function App() {
   return (
-    <div className="text-slate-900 bg-slate-50 min-h-screen">
-      <main className="pt-24">
+    <div className="text-slate-900 bg-slate-50 min-h-screen flex flex-col">
+      <main>
         {/* HERO SECTION */}
         <Hero/>
 

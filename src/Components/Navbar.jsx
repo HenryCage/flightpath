@@ -22,14 +22,11 @@ export default function Navbar() {
             <a className="text-slate-500 font-semibold cursor-pointer hover:text-slate-900 transition-colors duration-300 focus:outline-none">About Us</a>
             <a className="text-slate-500 font-semibold cursor-pointer hover:text-slate-900 transition-colors duration-300 focus:outline-none">Case Studies</a>
             <a className="text-slate-500 font-semibold cursor-pointer hover:text-slate-900 transition-colors duration-300 focus:outline-none">Insights</a>
-            <Link to="/contact" className="text-slate-500 font-semibold cursor-pointer hover:text-slate-900 transition-colors duration-300 focus:outline-none">
-              Contact Us
-            </Link>
           </div>
 
           {/* CTA & Mobile Toggle */}
           <div className="flex items-center gap-4">
-            <Link to="/contact" className="hidden md:inline-block bg-slate-900 text-white hover:bg-slate-800 px-6 py-3 rounded-md font-semibold active:scale-[0.98] transition-all cursor-pointer">
+            <Link to="/schedule-booking" className="hidden md:inline-block bg-slate-900 text-white hover:bg-slate-800 px-6 py-3 rounded-md font-semibold active:scale-[0.98] transition-all cursor-pointer">
               Schedule
             </Link>
 
@@ -52,9 +49,8 @@ export default function Navbar() {
             <a onClick={() => setIsOpen(false)} className="text-slate-600 font-bold text-lg hover:text-slate-900 cursor-pointer">About Us</a>
             <a onClick={() => setIsOpen(false)} className="text-slate-600 font-bold text-lg hover:text-slate-900 cursor-pointer">Case Studies</a>
             <a onClick={() => setIsOpen(false)} className="text-slate-600 font-bold text-lg hover:text-slate-900 cursor-pointer">Insights</a>
-            <Link onClick={() => setIsOpen(false)} to="/contact" className="text-slate-600 font-bold text-lg hover:text-slate-900">Contact Us</Link>
 
-            <Link onClick={() => setIsOpen(false)} to="/contact" className="bg-yellow-400 text-slate-900 text-center px-6 py-4 rounded-md font-extrabold mt-4 shadow-sm hover:bg-yellow-300 transition-colors">
+            <Link onClick={() => setIsOpen(false)} to="/schedule-booking" className="bg-yellow-400 text-slate-900 text-center px-6 py-4 rounded-md font-extrabold mt-4 shadow-sm hover:bg-yellow-300 transition-colors">
               Schedule Consultation
             </Link>
           </div>
