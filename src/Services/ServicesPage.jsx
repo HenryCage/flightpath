@@ -1,3 +1,5 @@
+import Footer from '../Components/Footer';
+
 const expandedServices = [
   {
     icon: 'corporate_fare',
@@ -41,23 +43,35 @@ const advisoryServices = expandedServices.slice(3);
 
 export default function ServicesPage() {
   return (
-    <div className="pt-24 pb-20 md:pt-32 md:pb-32 px-4 md:px-12 bg-slate-50 min-h-screen">
-      <div className="max-w-[1440px] mx-auto">
-        
-        {/* Page Header */}
-        <div className="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
-          <span className="text-yellow-500 uppercase tracking-[0.3em] font-extrabold text-xs md:text-sm">
-            Our Expertise
-          </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 mt-4 md:mt-6 tracking-tight">
-            Aviation Services
-          </h1>
-          <p className="text-lg md:text-xl text-slate-600 mt-4 md:mt-8 leading-relaxed px-2">
-            Comprehensive consulting solutions rigorously <strong className="font-semibold text-slate-800">tailored</strong> for the global aviation industry.
-          </p>
-        </div>
+    <div className="bg-slate-50 min-h-screen pt-24 font-sans text-slate-900 flex flex-col">
+      <main className="flex-grow">
+        {/* Page Header with Background Image */}
+        <section className="relative py-24 md:py-32 px-6 md:px-12 min-h-[50vh] flex items-center overflow-hidden">
+          {/* Background Image & Overlay */}
+          <div className="absolute inset-0">
+            <img 
+              src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?q=80&w=2070&auto=format&fit=crop" 
+              alt="Aviation Services" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-slate-900/75"></div>
+          </div>
+          
+          <div className="max-w-[1440px] mx-auto relative z-10 w-full text-center">
+            <span className="text-yellow-400 uppercase tracking-[0.3em] font-extrabold text-sm mb-6 block drop-shadow-sm">
+              Our Expertise
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white mt-4 md:mt-6 tracking-tight drop-shadow-md">
+              Aviation Services
+            </h1>
+            <p className="text-lg md:text-2xl text-slate-200 mt-6 md:mt-8 leading-relaxed max-w-3xl mx-auto drop-shadow-sm">
+              Comprehensive consulting solutions rigorously <strong className="font-bold text-white">tailored</strong> for the global aviation industry.
+            </p>
+          </div>
+        </section>
 
-        {/* Section 1: Core Strategy */}
+        <div className="py-20 md:py-32 px-4 md:px-12 max-w-[1440px] mx-auto">
+          {/* Section 1: Core Strategy */}
         <div className="mb-20 md:mb-32">
           <div className="flex items-center gap-4 mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900">Core Strategy</h2>
@@ -112,6 +126,8 @@ export default function ServicesPage() {
         </div>
 
       </div>
+      </main>
+      <Footer />
     </div>
   );
 }

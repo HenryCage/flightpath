@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logo from '../assets/flightpath-33.png';
 
 export default function Footer() {
   return (
@@ -9,9 +10,9 @@ export default function Footer() {
           
           {/* Brand & Rights */}
           <div className="md:col-span-1">
-            <div className="font-black text-white text-2xl mb-6 tracking-tight uppercase">
-              Flightpath
-            </div>
+            <Link to="/" className="block mb-6">
+              <img src={logo} alt="Flightpath Consulting Limited" className="h-20 object-contain w-auto brightness-0 invert" />
+            </Link>
             <p className="text-slate-400 text-sm leading-loose mb-8">
               Elevating operational efficiency and achieving strategic growth for the global aviation industry.
             </p>
@@ -43,8 +44,8 @@ export default function Footer() {
           <div className="md:col-span-1 flex flex-col gap-4">
             <h4 className="text-white font-bold mb-2 tracking-widest text-sm uppercase">Quick Links</h4>
             <Link to="/services" className="text-slate-400 hover:text-white transition-colors max-w-max">Services</Link>
-            <a className="text-slate-400 hover:text-white transition-colors max-w-max cursor-pointer">About Us</a>
-            <a className="text-slate-400 hover:text-white transition-colors max-w-max cursor-pointer">Case Studies</a>
+            <Link to="/about" className="text-slate-400 hover:text-white transition-colors max-w-max cursor-pointer">About Us</Link>
+            <Link to="/case-studies" className="text-slate-400 hover:text-white transition-colors max-w-max cursor-pointer">Case Studies</Link>
             <Link to="/schedule-booking" className="text-slate-400 hover:tracking-wide hover:text-yellow-400 transition-all font-bold max-w-max mt-2">Schedule Consultation →</Link>
           </div>
 
