@@ -36,10 +36,10 @@ export default function About() {
 
   return (
     <div className="bg-slate-50 min-h-screen pt-24 font-sans text-slate-900 flex flex-col">
-      <main className="flex-grow">
+      <main className="grow">
         {/* Header Section */}
         <section className="relative py-24 md:py-32 px-6 md:px-12 min-h-[50vh] flex items-center overflow-hidden">
-          {/* Background Image & Overlay */}
+          {/* Background Image */}
           <div className="absolute inset-0">
             <img 
               src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop" 
